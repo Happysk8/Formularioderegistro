@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Formulario de registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="formulario">Registro</string>
+    <string name="correo">Correo</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="password">Password</string>
+    <string name="repeatpassword">Repeat password</string>
+    <string name="guardar">Guardar</string>
+    <string name="caminar">Caminar</string>
+    <string name="nadar">Nadar</string>
+    <string name="pintar">Pintar</string>
+    <string name="skate">Skate</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="ciudad">Ciudad de nacimiento:</string>
+</resources>

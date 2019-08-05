@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/darkgray">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/tvTitulo"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="40dp"
+                android:text="@string/formulario"
+                android:gravity="center"
+
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAllCaps="false"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/etNombre"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:inputType="textPersonName"
+                android:hint="@string/nombre"
+                android:background="@color/azure"
+                android:padding="5dp"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/etPassword"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:inputType="text|textPassword"
+                android:hint="@string/password"
+                android:padding="5dp"
+                android:background="@color/azure"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/etRepeatpassword"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:inputType="text|textPassword"
+                android:hint="@string/repeatpassword"
+                android:padding="5dp"
+                android:background="@color/azure"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/etCorreo"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:hint="@string/correo"
+                android:background="@color/azure"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbMasculino"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:text="@string/masculino"
+                         android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/rbFemenino"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_weight="1"
+                         android:text="@string/femenino"
+                         android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bnfechanac"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:text="@string/fecha_de_nacimiento"
+                android:onClick="showDatePickerDialog" android:background="@color/cadetblue"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+            <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:id="@+id/cbCaminar"
+                    android:text="@string/caminar"
+                    android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/cbNadar"
+                    android:text="@string/nadar"
+                    android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/cbPintar"
+                    android:text="@string/pintar"
+                    android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/cbSkate"
+                    android:text="@string/skate"
+                    android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/text_view"
+                    android:text="@string/ciudad"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cityspinner"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/cadetblue"/>
+        </LinearLayout>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bnGuardar"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:text="@string/guardar"
+                android:background="@color/cadetblue"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txResultado"
+                android:textSize="20sp"
+                android:textColor="#FF072F24"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txFechaNac"
+                android:textSize="20sp"
+                android:textColor="#FF072F24"/>
+
+
+    </LinearLayout>
+</ScrollView>
